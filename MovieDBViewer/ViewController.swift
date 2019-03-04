@@ -1,20 +1,16 @@
-//
-//  ViewController.swift
-//  MovieDBViewer
-//
-//  Created by Bastián Véliz Vega on 3/4/19.
-//  Copyright © 2019 Bastián Véliz Vega. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let dataSource = MovieDBCloudSource()
+        if let apiUrl = Configurations.shared.movieDbEndpoint, let apiKey = Configurations.shared.movieDbApiKey {
+            dataSource.getMovieList(apiUrl: apiUrl, apiKey: apiKey, searchType: "popular", success: { response in
+                print("Response: \(response)")
+            }) { error in
+                print("Response error: \(error)")
+            }
+        }
     }
-
-
 }
-
