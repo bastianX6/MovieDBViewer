@@ -1,29 +1,27 @@
 import UIKit
 
 protocol ListViewerWireframeProtocol: class {
-    static func assemble() -> UIViewController
+    static func assemble(dataSource: MovieDBCloudSourceProtocol, hudProvider: HUDProviderProtocol?) -> UIViewController
 }
 
 protocol ListViewerViewProtocol: class {
     var presenter: ListViewerPresenterProtocol? { get set }
-    // viewModel: ViewModel? { get set }
 
-    // Methods to communicate Presenter -> View 
-    // func showFoobarsData(_ foobars: [Foobar]) { }
-    // func showNoFoobarsScreen() { } 
+    func showMovies(_ movies: [MovieModel])
+    func showError(_ error: Error)
+    func showLoading()
+    func hideLoading()
 }
 
 protocol ListViewerInteractorProtocol: class {
     var delegate: ListViewerInteractorDelegate? { get set }
 
-    // Methods to communicate Presenter -> Interactor
-    // func fetchFoobar() { }
+    func fetchMovies(searchType: MovieDBSearchType)
 }
 
 protocol ListViewerInteractorDelegate: class {
-    // Methods to communicate Interactor -> Presenter
-    // func foobarsFetched(_ foobars: [Foobar]) { }
-    // func foobarsFetchedFailed() { }
+    func fetchMoviesSuccess(movies: [MovieModel])
+    func fetchMoviesFail(error: Error)
 }
 
 protocol ListViewerPresenterProtocol: class {
@@ -31,14 +29,17 @@ protocol ListViewerPresenterProtocol: class {
     var interactor: ListViewerInteractorProtocol? { get set }
     var router: ListViewerRouterProtocol? { get set }
 
-    // Methods to react and notify from View -> Presenter
-    // func viewDidLoad() { }
-    // didSelectFoobar(_ foobar: Foobar) { }
+    func viewDidLoad()
+    func didPressSearchButton(searchType: MovieDBSearchType)
+    func didSelectMovie(movie: MovieModel)
 }
 
 protocol ListViewerRouterProtocol: class {
     var viewController: UIViewController? { get set }
+    func showMovie(movie: MovieModel)
+}
 
-    // Methods to communicate Presenter -> Router
-    //func presentFoobarDetail(forFoobar foobar: Foobar) { }
+enum MovieDBSearchType: String {
+    case popular
+    case topRated = "top_rated"
 }

@@ -1,7 +1,7 @@
 import Foundation
 
 protocol MovieDBRepositoryProtocol {
-    func getMovieList(searchType: MovieDBRepositorySearchType,
+    func getMovieList(searchType: MovieDBSearchType,
                       success: @escaping ([MovieModel]) -> Void,
                       failure: @escaping (Error) -> Void)
 }
@@ -13,7 +13,7 @@ class MovieDBRepository: MovieDBRepositoryProtocol {
         self.dataSource = dataSource
     }
 
-    func getMovieList(searchType: MovieDBRepositorySearchType,
+    func getMovieList(searchType: MovieDBSearchType,
                       success: @escaping ([MovieModel]) -> Void,
                       failure: @escaping (Error) -> Void) {
         guard let apiKey = Configurations.shared.movieDbApiKey,
@@ -35,9 +35,4 @@ class MovieDBRepository: MovieDBRepositoryProtocol {
                                 },
                                 failure: failure)
     }
-}
-
-enum MovieDBRepositorySearchType: String {
-    case popular
-    case topRated = "top_rated"
 }

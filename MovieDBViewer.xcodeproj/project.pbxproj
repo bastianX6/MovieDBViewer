@@ -28,6 +28,8 @@
 		03FAF574222F2C0A008AB91D /* ListViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */; };
 		03FAF575222F2C0A008AB91D /* ListViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */; };
 		03FAF576222F2C0A008AB91D /* ListViewerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */; };
+		03FAF57A222F380D008AB91D /* HUDProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF579222F380D008AB91D /* HUDProviderProtocol.swift */; };
+		03FAF57C222F389B008AB91D /* SVProgressHUDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */; };
 		E8602028B376338823792463 /* Pods_MovieDBViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewerViewController.xib; sourceTree = "<group>"; };
 		03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerPresenter.swift; sourceTree = "<group>"; };
 		03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerContract.swift; sourceTree = "<group>"; };
+		03FAF579222F380D008AB91D /* HUDProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDProviderProtocol.swift; sourceTree = "<group>"; };
+		03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDProvider.swift; sourceTree = "<group>"; };
 		052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6EBD84026B84E2EE208B7 /* Pods-MovieDBViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.release.xcconfig"; sourceTree = "<group>"; };
 		53A981A1B6FB208D0CE6ABC5 /* Pods-MovieDBViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		03DCB079222DD9CF0049FB3D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03FAF578222F37F8008AB91D /* Providers */,
 				03FAF568222F2B3A008AB91D /* ListViewer */,
 			);
 			path = Modules;
@@ -181,6 +186,15 @@
 				03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */,
 			);
 			path = ListViewer;
+			sourceTree = "<group>";
+		};
+		03FAF578222F37F8008AB91D /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF579222F380D008AB91D /* HUDProviderProtocol.swift */,
+				03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		7E87DB86D8CF4A02CD503BCE /* Frameworks */ = {
@@ -322,14 +336,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,10 +369,12 @@
 				03FAF571222F2C0A008AB91D /* ListViewerWireframe.swift in Sources */,
 				03DCB089222DE2380049FB3D /* Alamofire+Codable.swift in Sources */,
 				03DCB081222DDF420049FB3D /* MovieDBCloudSource.swift in Sources */,
+				03FAF57C222F389B008AB91D /* SVProgressHUDProvider.swift in Sources */,
 				03FAF567222F2AC7008AB91D /* Errors.swift in Sources */,
 				03DCB086222DE0CB0049FB3D /* MovieEntity.swift in Sources */,
 				03FAF570222F2C0A008AB91D /* ListViewerViewController.swift in Sources */,
 				03DCB067222DD9640049FB3D /* AppDelegate.swift in Sources */,
+				03FAF57A222F380D008AB91D /* HUDProviderProtocol.swift in Sources */,
 				03FAF572222F2C0A008AB91D /* ListViewerInteractor.swift in Sources */,
 				03DCB07E222DDBD10049FB3D /* Configurations.swift in Sources */,
 				03FAF575222F2C0A008AB91D /* ListViewerPresenter.swift in Sources */,
