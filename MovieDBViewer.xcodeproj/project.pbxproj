@@ -18,6 +18,16 @@
 		03DCB084222DE0A50049FB3D /* MovieDBResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCB083222DE0A50049FB3D /* MovieDBResponseEntity.swift */; };
 		03DCB086222DE0CB0049FB3D /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCB085222DE0CB0049FB3D /* MovieEntity.swift */; };
 		03DCB089222DE2380049FB3D /* Alamofire+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCB088222DE2380049FB3D /* Alamofire+Codable.swift */; };
+		03FAF563222F25C6008AB91D /* MovieDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF562222F25C6008AB91D /* MovieDBRepository.swift */; };
+		03FAF565222F2822008AB91D /* MovieDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF564222F2822008AB91D /* MovieDBModel.swift */; };
+		03FAF567222F2AC7008AB91D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF566222F2AC7008AB91D /* Errors.swift */; };
+		03FAF570222F2C0A008AB91D /* ListViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF569222F2C0A008AB91D /* ListViewerViewController.swift */; };
+		03FAF571222F2C0A008AB91D /* ListViewerWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56A222F2C0A008AB91D /* ListViewerWireframe.swift */; };
+		03FAF572222F2C0A008AB91D /* ListViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56B222F2C0A008AB91D /* ListViewerInteractor.swift */; };
+		03FAF573222F2C0A008AB91D /* ListViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56C222F2C0A008AB91D /* ListViewerRouter.swift */; };
+		03FAF574222F2C0A008AB91D /* ListViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */; };
+		03FAF575222F2C0A008AB91D /* ListViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */; };
+		03FAF576222F2C0A008AB91D /* ListViewerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */; };
 		E8602028B376338823792463 /* Pods_MovieDBViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +45,16 @@
 		03DCB083222DE0A50049FB3D /* MovieDBResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBResponseEntity.swift; sourceTree = "<group>"; };
 		03DCB085222DE0CB0049FB3D /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 		03DCB088222DE2380049FB3D /* Alamofire+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Codable.swift"; sourceTree = "<group>"; };
+		03FAF562222F25C6008AB91D /* MovieDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBRepository.swift; sourceTree = "<group>"; };
+		03FAF564222F2822008AB91D /* MovieDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBModel.swift; sourceTree = "<group>"; };
+		03FAF566222F2AC7008AB91D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		03FAF569222F2C0A008AB91D /* ListViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerViewController.swift; sourceTree = "<group>"; };
+		03FAF56A222F2C0A008AB91D /* ListViewerWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerWireframe.swift; sourceTree = "<group>"; };
+		03FAF56B222F2C0A008AB91D /* ListViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerInteractor.swift; sourceTree = "<group>"; };
+		03FAF56C222F2C0A008AB91D /* ListViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerRouter.swift; sourceTree = "<group>"; };
+		03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewerViewController.xib; sourceTree = "<group>"; };
+		03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerPresenter.swift; sourceTree = "<group>"; };
+		03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerContract.swift; sourceTree = "<group>"; };
 		052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6EBD84026B84E2EE208B7 /* Pods-MovieDBViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.release.xcconfig"; sourceTree = "<group>"; };
 		53A981A1B6FB208D0CE6ABC5 /* Pods-MovieDBViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,9 +110,9 @@
 		03DCB078222DD9820049FB3D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				03DCB08A222DEBB20049FB3D /* Repository */,
-				03DCB082222DDF4A0049FB3D /* Entities */,
 				03DCB07F222DDE240049FB3D /* DataSource */,
+				03DCB082222DDF4A0049FB3D /* Entities */,
+				03DCB08A222DEBB20049FB3D /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -100,6 +120,7 @@
 		03DCB079222DD9CF0049FB3D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				03FAF568222F2B3A008AB91D /* ListViewer */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 			children = (
 				03DCB07B222DDB920049FB3D /* Configurations.plist */,
 				03DCB07D222DDBD10049FB3D /* Configurations.swift */,
+				03FAF566222F2AC7008AB91D /* Errors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -141,8 +163,24 @@
 		03DCB08A222DEBB20049FB3D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				03FAF562222F25C6008AB91D /* MovieDBRepository.swift */,
+				03FAF564222F2822008AB91D /* MovieDBModel.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		03FAF568222F2B3A008AB91D /* ListViewer */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF569222F2C0A008AB91D /* ListViewerViewController.swift */,
+				03FAF56A222F2C0A008AB91D /* ListViewerWireframe.swift */,
+				03FAF56B222F2C0A008AB91D /* ListViewerInteractor.swift */,
+				03FAF56C222F2C0A008AB91D /* ListViewerRouter.swift */,
+				03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */,
+				03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */,
+				03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */,
+			);
+			path = ListViewer;
 			sourceTree = "<group>";
 		};
 		7E87DB86D8CF4A02CD503BCE /* Frameworks */ = {
@@ -174,6 +212,7 @@
 				03DCB060222DD9640049FB3D /* Frameworks */,
 				03DCB061222DD9640049FB3D /* Resources */,
 				FA9FB03C494FF909A90EE39D /* [CP] Embed Pods Frameworks */,
+				03FAF577222F2D48008AB91D /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -223,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DCB071222DD9660049FB3D /* LaunchScreen.storyboard in Resources */,
+				03FAF574222F2C0A008AB91D /* ListViewerViewController.xib in Resources */,
 				03DCB07C222DDB920049FB3D /* Configurations.plist in Resources */,
 				03DCB06E222DD9660049FB3D /* Assets.xcassets in Resources */,
 				03DCB06C222DD9640049FB3D /* Main.storyboard in Resources */,
@@ -232,6 +272,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03FAF577222F2D48008AB91D /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --reporter xcode\n";
+		};
 		8B9F5246849ACD5ECFB431EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,13 +343,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FAF573222F2C0A008AB91D /* ListViewerRouter.swift in Sources */,
+				03FAF563222F25C6008AB91D /* MovieDBRepository.swift in Sources */,
 				03DCB084222DE0A50049FB3D /* MovieDBResponseEntity.swift in Sources */,
+				03FAF565222F2822008AB91D /* MovieDBModel.swift in Sources */,
 				03DCB069222DD9640049FB3D /* ViewController.swift in Sources */,
+				03FAF571222F2C0A008AB91D /* ListViewerWireframe.swift in Sources */,
 				03DCB089222DE2380049FB3D /* Alamofire+Codable.swift in Sources */,
 				03DCB081222DDF420049FB3D /* MovieDBCloudSource.swift in Sources */,
+				03FAF567222F2AC7008AB91D /* Errors.swift in Sources */,
 				03DCB086222DE0CB0049FB3D /* MovieEntity.swift in Sources */,
+				03FAF570222F2C0A008AB91D /* ListViewerViewController.swift in Sources */,
 				03DCB067222DD9640049FB3D /* AppDelegate.swift in Sources */,
+				03FAF572222F2C0A008AB91D /* ListViewerInteractor.swift in Sources */,
 				03DCB07E222DDBD10049FB3D /* Configurations.swift in Sources */,
+				03FAF575222F2C0A008AB91D /* ListViewerPresenter.swift in Sources */,
+				03FAF576222F2C0A008AB91D /* ListViewerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

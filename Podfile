@@ -5,5 +5,6 @@ target 'MovieDBViewer' do
 
   pod 'Alamofire', '~> 4.8'
   pod 'SDWebImage', '~> 4.0'
+  pod 'SwiftLint'
 
 end

@@ -32,7 +32,3 @@ class MovieDBCloudSource: MovieDBCloudSourceProtocol {
         }
     }
 }
-
-enum MovieDBCloudSourceError: Error {
-    case badURL
-}

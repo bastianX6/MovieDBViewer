@@ -1,12 +1,12 @@
 import Alamofire
 
-fileprivate func newJSONDecoder() -> JSONDecoder {
+private func newJSONDecoder() -> JSONDecoder {
     let decoder = JSONDecoder()
     decoder.dateDecodingStrategy = .iso8601
     return decoder
 }
 
-fileprivate func newJSONEncoder() -> JSONEncoder {
+private func newJSONEncoder() -> JSONEncoder {
     let encoder = JSONEncoder()
     encoder.dateEncodingStrategy = .iso8601
     return encoder
@@ -24,12 +24,12 @@ extension DataRequest {
             return Result { try newJSONDecoder().decode(T.self, from: data) }
         }
     }
-    
+
     @discardableResult
     fileprivate func responseDecodable<T: Decodable>(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<T>) -> Void) -> Self {
         return response(queue: queue, responseSerializer: decodableResponseSerializer(), completionHandler: completionHandler)
     }
-    
+
     @discardableResult
     func responseMovieListResponse(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<MovieListResponseEntity>) -> Void) -> Self {
         return responseDecodable(queue: queue, completionHandler: completionHandler)
