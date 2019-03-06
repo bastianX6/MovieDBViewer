@@ -27,6 +27,12 @@ extension ListViewerViewController: UITableViewDataSource, UITableViewDelegate {
         cell.setupCell(title: movie.title, date: movie.humanDate, average: movie.voteAverage)
         return cell
     }
+
+    func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard movies.count > 0, indexPath.row < movies.count else { return }
+        let movie = movies[indexPath.row]
+        presenter?.didSelectMovie(movie: movie)
+    }
 }
 
 extension ListViewerViewController: DZNEmptyDataSetSource {

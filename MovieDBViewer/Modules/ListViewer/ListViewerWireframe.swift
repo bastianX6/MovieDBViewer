@@ -6,7 +6,10 @@ class ListViewerWireframe: ListViewerWireframeProtocol {
         let interactor = ListViewerInteractor(repository: repository)
         let router = ListViewerRouter()
         let presenter = ListViewerPresenter(interactor: interactor, router: router)
-        let view = ListViewerViewController(presenter: presenter, hudProvider: hudProvider)
+        let storyboard = UIStoryboard(name: "ListViewer", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "ListViewerViewController") as! ListViewerViewController
+        view.setup(presenter: presenter, hudProvider: hudProvider)
+
         let navigation = UINavigationController(rootViewController: view)
 
         interactor.delegate = presenter

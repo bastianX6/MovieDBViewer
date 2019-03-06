@@ -5,3 +5,5 @@
 "ListViewer.barButtonItem.topRated" = "Top rated";
 
 "ListViewer.error.internal" = "Internal error";
+
+"ListViewer.title" = "The Movie DB";

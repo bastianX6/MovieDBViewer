@@ -6,6 +6,7 @@ enum ListViewerLocalizer: String {
     case buttonItemTopRated = "ListViewer.barButtonItem.topRated"
     case buttonItemPopular = "ListViewer.barButtonItem.popular"
     case internalError = "ListViewer.error.internal"
+    case title = "ListViewer.title"
 }
 
 extension ListViewerLocalizer {

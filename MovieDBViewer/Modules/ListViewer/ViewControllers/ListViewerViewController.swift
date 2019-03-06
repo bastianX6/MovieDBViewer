@@ -9,16 +9,11 @@ class ListViewerViewController: UIViewController {
     @IBOutlet var barButtonItemPopular: UIBarButtonItem!
     @IBOutlet var barButtonItemTopRated: UIBarButtonItem!
 
-    convenience init(presenter: ListViewerPresenterProtocol, hudProvider: HUDProviderProtocol? = nil) {
-        self.init(nibName: ListViewerViewController.nameOfClass, bundle: nil)
-        self.presenter = presenter
-        self.hudProvider = hudProvider
-    }
-
     // MARK: UIViewController lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTitle()
         setupTableView()
         setupBarButtonItems()
         presenter?.viewDidLoad()
@@ -34,9 +29,18 @@ class ListViewerViewController: UIViewController {
         tableView.emptyDataSetSource = self
     }
 
+    func setup(presenter: ListViewerPresenterProtocol, hudProvider: HUDProviderProtocol? = nil) {
+        self.presenter = presenter
+        self.hudProvider = hudProvider
+    }
+
     private func setupBarButtonItems() {
         barButtonItemPopular.title = ListViewerLocalizer.buttonItemPopular.localizedString
         barButtonItemTopRated.title = ListViewerLocalizer.buttonItemTopRated.localizedString
+    }
+
+    private func setupTitle() {
+        title = ListViewerLocalizer.title.localizedString
     }
 
     @IBAction func barButtonItemPopularTapped(_: UIBarButtonItem) {
@@ -47,6 +51,16 @@ class ListViewerViewController: UIViewController {
     @IBAction func barButtonItemTopRatedTapped(_: UIBarButtonItem) {
         searchType = .topRated
         presenter?.didPressSearchButton(searchType: searchType)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let movie = sender as? MovieModel,
+            let destinationVC = segue.destination as? MovieDetailViewController,
+            segue.identifier == "ListViewerDetailSegue" {
+            destinationVC.movie = movie
+            destinationVC.modalPresentationStyle = UIModalPresentationStyle.popover
+            destinationVC.popoverPresentationController?.delegate = self
+        }
     }
 }
 
@@ -66,5 +80,11 @@ extension ListViewerViewController: ListViewerViewProtocol {
 
     func hideLoading() {
         hudProvider?.hideLoading()
+    }
+}
+
+extension ListViewerViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyle(for _: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 }

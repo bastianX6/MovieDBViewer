@@ -34,9 +34,9 @@ class ListViewerCell: UITableViewCell {
         switch average {
         case _ where average <= 0:
             return .black
-        case _ where average > 0 && average <= 0.3:
+        case _ where average > 0 && average <= 3.0:
             return .red
-        case _ where average > 0.3 && average < 0.70:
+        case _ where average > 3.0 && average < 7.0:
             return .yellow
         default:
             return .green
@@ -44,7 +44,7 @@ class ListViewerCell: UITableViewCell {
     }
 
     private func getAverageLabelColor(average: Double) -> UIColor {
-        guard average > 0.3, average < 0.70 else {
+        guard average > 3.0, average < 7.0 else {
             return .white
         }
         return .black

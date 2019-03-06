@@ -5,7 +5,7 @@
 	<key>MOVIEDB_ENDPOINT</key>
 	<string>https://api.themoviedb.org/3/movie/</string>
 	<key>MOVIEDB_IMG_ENDPOINT</key>
-	<string>http://image.tmdb.org/t/p/w500/</string>
+	<string>https://image.tmdb.org/t/p/w500</string>
 	<key>APIKEY</key>
 	<string>34738023d27013e6d1b995443764da44</string>
 </dict>
