@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03DCB067222DD9640049FB3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCB066222DD9640049FB3D /* AppDelegate.swift */; };
-		03DCB069222DD9640049FB3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DCB068222DD9640049FB3D /* ViewController.swift */; };
-		03DCB06C222DD9640049FB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DCB06A222DD9640049FB3D /* Main.storyboard */; };
 		03DCB06E222DD9660049FB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DCB06D222DD9660049FB3D /* Assets.xcassets */; };
 		03DCB071222DD9660049FB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DCB06F222DD9660049FB3D /* LaunchScreen.storyboard */; };
 		03DCB07C222DDB920049FB3D /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03DCB07B222DDB920049FB3D /* Configurations.plist */; };
@@ -30,14 +28,20 @@
 		03FAF576222F2C0A008AB91D /* ListViewerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */; };
 		03FAF57A222F380D008AB91D /* HUDProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF579222F380D008AB91D /* HUDProviderProtocol.swift */; };
 		03FAF57C222F389B008AB91D /* SVProgressHUDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */; };
+		03FAF582222F4035008AB91D /* ListViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF580222F4035008AB91D /* ListViewerCell.swift */; };
+		03FAF583222F4035008AB91D /* ListViewerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FAF581222F4035008AB91D /* ListViewerCell.xib */; };
+		03FAF585222F4664008AB91D /* ListViewerViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF584222F4664008AB91D /* ListViewerViewController+UITableView.swift */; };
+		03FAF587222F47B0008AB91D /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF586222F47B0008AB91D /* UIKitExtensions.swift */; };
+		03FAF589222F4E34008AB91D /* ListViewerEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF588222F4E34008AB91D /* ListViewerEmptyView.swift */; };
+		03FAF58B222F4E41008AB91D /* ListViewerEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FAF58A222F4E41008AB91D /* ListViewerEmptyView.xib */; };
+		03FAF58F222F4FCE008AB91D /* ListViewerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03FAF591222F4FCE008AB91D /* ListViewerLocalizable.strings */; };
+		03FAF593222F4FFD008AB91D /* ListViewerLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FAF592222F4FFD008AB91D /* ListViewerLocalizer.swift */; };
 		E8602028B376338823792463 /* Pods_MovieDBViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03DCB063222DD9640049FB3D /* MovieDBViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDBViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DCB066222DD9640049FB3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03DCB068222DD9640049FB3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03DCB06B222DD9640049FB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03DCB06D222DD9660049FB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03DCB070222DD9660049FB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03DCB072222DD9660049FB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +63,14 @@
 		03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerContract.swift; sourceTree = "<group>"; };
 		03FAF579222F380D008AB91D /* HUDProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDProviderProtocol.swift; sourceTree = "<group>"; };
 		03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVProgressHUDProvider.swift; sourceTree = "<group>"; };
+		03FAF580222F4035008AB91D /* ListViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerCell.swift; sourceTree = "<group>"; };
+		03FAF581222F4035008AB91D /* ListViewerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewerCell.xib; sourceTree = "<group>"; };
+		03FAF584222F4664008AB91D /* ListViewerViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewerViewController+UITableView.swift"; sourceTree = "<group>"; };
+		03FAF586222F47B0008AB91D /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		03FAF588222F4E34008AB91D /* ListViewerEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerEmptyView.swift; sourceTree = "<group>"; };
+		03FAF58A222F4E41008AB91D /* ListViewerEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewerEmptyView.xib; sourceTree = "<group>"; };
+		03FAF590222F4FCE008AB91D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ListViewerLocalizable.strings; sourceTree = "<group>"; };
+		03FAF592222F4FFD008AB91D /* ListViewerLocalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewerLocalizer.swift; sourceTree = "<group>"; };
 		052EE836CD67DBBED90DF71F /* Pods_MovieDBViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F6EBD84026B84E2EE208B7 /* Pods-MovieDBViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.release.xcconfig"; sourceTree = "<group>"; };
 		53A981A1B6FB208D0CE6ABC5 /* Pods-MovieDBViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDBViewer/Pods-MovieDBViewer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,12 +111,11 @@
 			children = (
 				03DCB072222DD9660049FB3D /* Info.plist */,
 				03DCB066222DD9640049FB3D /* AppDelegate.swift */,
-				03DCB068222DD9640049FB3D /* ViewController.swift */,
 				03DCB06D222DD9660049FB3D /* Assets.xcassets */,
 				03DCB078222DD9820049FB3D /* Data */,
 				03DCB087222DE2210049FB3D /* Extensions */,
 				03DCB06F222DD9660049FB3D /* LaunchScreen.storyboard */,
-				03DCB06A222DD9640049FB3D /* Main.storyboard */,
+				03FAF578222F37F8008AB91D /* Providers */,
 				03DCB079222DD9CF0049FB3D /* Modules */,
 				03DCB07A222DDB760049FB3D /* Resources */,
 			);
@@ -124,7 +135,6 @@
 		03DCB079222DD9CF0049FB3D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				03FAF578222F37F8008AB91D /* Providers */,
 				03FAF568222F2B3A008AB91D /* ListViewer */,
 			);
 			path = Modules;
@@ -161,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				03DCB088222DE2380049FB3D /* Alamofire+Codable.swift */,
+				03FAF586222F47B0008AB91D /* UIKitExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,11 +188,13 @@
 		03FAF568222F2B3A008AB91D /* ListViewer */ = {
 			isa = PBXGroup;
 			children = (
-				03FAF569222F2C0A008AB91D /* ListViewerViewController.swift */,
+				03FAF58C222F4FAC008AB91D /* Resources */,
+				03FAF57F222F3F92008AB91D /* Views */,
+				03FAF57E222F3F88008AB91D /* ViewControllers */,
+				03FAF57D222F3F83008AB91D /* Xibs */,
 				03FAF56A222F2C0A008AB91D /* ListViewerWireframe.swift */,
 				03FAF56B222F2C0A008AB91D /* ListViewerInteractor.swift */,
 				03FAF56C222F2C0A008AB91D /* ListViewerRouter.swift */,
-				03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */,
 				03FAF56E222F2C0A008AB91D /* ListViewerPresenter.swift */,
 				03FAF56F222F2C0A008AB91D /* ListViewerContract.swift */,
 			);
@@ -195,6 +208,43 @@
 				03FAF57B222F389B008AB91D /* SVProgressHUDProvider.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		03FAF57D222F3F83008AB91D /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF581222F4035008AB91D /* ListViewerCell.xib */,
+				03FAF56D222F2C0A008AB91D /* ListViewerViewController.xib */,
+				03FAF58A222F4E41008AB91D /* ListViewerEmptyView.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		03FAF57E222F3F88008AB91D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF569222F2C0A008AB91D /* ListViewerViewController.swift */,
+				03FAF584222F4664008AB91D /* ListViewerViewController+UITableView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		03FAF57F222F3F92008AB91D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF580222F4035008AB91D /* ListViewerCell.swift */,
+				03FAF588222F4E34008AB91D /* ListViewerEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03FAF58C222F4FAC008AB91D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03FAF591222F4FCE008AB91D /* ListViewerLocalizable.strings */,
+				03FAF592222F4FFD008AB91D /* ListViewerLocalizer.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7E87DB86D8CF4A02CD503BCE /* Frameworks */ = {
@@ -276,10 +326,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DCB071222DD9660049FB3D /* LaunchScreen.storyboard in Resources */,
+				03FAF583222F4035008AB91D /* ListViewerCell.xib in Resources */,
 				03FAF574222F2C0A008AB91D /* ListViewerViewController.xib in Resources */,
 				03DCB07C222DDB920049FB3D /* Configurations.plist in Resources */,
+				03FAF58B222F4E41008AB91D /* ListViewerEmptyView.xib in Resources */,
+				03FAF58F222F4FCE008AB91D /* ListViewerLocalizable.strings in Resources */,
 				03DCB06E222DD9660049FB3D /* Assets.xcassets in Resources */,
-				03DCB06C222DD9640049FB3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FAF589222F4E34008AB91D /* ListViewerEmptyView.swift in Sources */,
 				03FAF573222F2C0A008AB91D /* ListViewerRouter.swift in Sources */,
+				03FAF582222F4035008AB91D /* ListViewerCell.swift in Sources */,
+				03FAF585222F4664008AB91D /* ListViewerViewController+UITableView.swift in Sources */,
 				03FAF563222F25C6008AB91D /* MovieDBRepository.swift in Sources */,
 				03DCB084222DE0A50049FB3D /* MovieDBResponseEntity.swift in Sources */,
+				03FAF587222F47B0008AB91D /* UIKitExtensions.swift in Sources */,
 				03FAF565222F2822008AB91D /* MovieDBModel.swift in Sources */,
-				03DCB069222DD9640049FB3D /* ViewController.swift in Sources */,
 				03FAF571222F2C0A008AB91D /* ListViewerWireframe.swift in Sources */,
 				03DCB089222DE2380049FB3D /* Alamofire+Codable.swift in Sources */,
 				03DCB081222DDF420049FB3D /* MovieDBCloudSource.swift in Sources */,
@@ -375,6 +430,7 @@
 				03FAF570222F2C0A008AB91D /* ListViewerViewController.swift in Sources */,
 				03DCB067222DD9640049FB3D /* AppDelegate.swift in Sources */,
 				03FAF57A222F380D008AB91D /* HUDProviderProtocol.swift in Sources */,
+				03FAF593222F4FFD008AB91D /* ListViewerLocalizer.swift in Sources */,
 				03FAF572222F2C0A008AB91D /* ListViewerInteractor.swift in Sources */,
 				03DCB07E222DDBD10049FB3D /* Configurations.swift in Sources */,
 				03FAF575222F2C0A008AB91D /* ListViewerPresenter.swift in Sources */,
@@ -385,20 +441,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03DCB06A222DD9640049FB3D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03DCB06B222DD9640049FB3D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03DCB06F222DD9660049FB3D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03DCB070222DD9660049FB3D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03FAF591222F4FCE008AB91D /* ListViewerLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FAF590222F4FCE008AB91D /* en */,
+			);
+			name = ListViewerLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

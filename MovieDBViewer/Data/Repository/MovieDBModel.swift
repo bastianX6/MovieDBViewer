@@ -7,6 +7,18 @@ struct MovieModel {
     let posterPath: String
     let voteAverage: Double
 
+    var humanDate: String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .short
+        formatter.doesRelativeDateFormatting = true
+
+        let locale = Locale.current
+        formatter.locale = locale
+
+        return formatter.string(from: releaseDate)
+    }
+
     init?(entity: MovieEntity) {
         guard let title = entity.title, let overview = entity.overview, let releaseDateString = entity.releaseDate, let posterPath = entity.posterPath, let voteAverage = entity.voteAverage else {
             return nil

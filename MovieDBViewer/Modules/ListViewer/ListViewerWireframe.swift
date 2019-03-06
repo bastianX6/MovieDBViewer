@@ -1,7 +1,7 @@
 import UIKit
 
 class ListViewerWireframe: ListViewerWireframeProtocol {
-    static func assemble(dataSource: MovieDBCloudSourceProtocol, hudProvider: HUDProviderProtocol? = nil) -> UIViewController {
+    static func assemble(dataSource: MovieDBCloudSourceProtocol = MovieDBCloudSource(), hudProvider: HUDProviderProtocol? = SVProgressHUDProvider()) -> UIViewController {
         let repository = MovieDBRepository(dataSource: dataSource)
         let interactor = ListViewerInteractor(repository: repository)
         let router = ListViewerRouter()

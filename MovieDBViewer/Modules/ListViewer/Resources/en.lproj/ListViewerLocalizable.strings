@@ -1,0 +1,7 @@
+"ListViewer.emptyView.message" = "No movies found :(";
+"ListViewer.cell.noAverage" = "N.R.";
+
+"ListViewer.barButtonItem.popular" = "Popular";
+"ListViewer.barButtonItem.topRated" = "Top rated";
+
+"ListViewer.error.internal" = "Internal error";
